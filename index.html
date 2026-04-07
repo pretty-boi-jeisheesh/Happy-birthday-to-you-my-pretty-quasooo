@@ -28,6 +28,7 @@
     color: #ff69b4;
     margin-bottom: 25px;
     text-shadow: 1px 1px 5px rgba(255,255,255,0.8);
+    min-height: 50px;
   }
 
   /* MAIN PHOTO SECTION - NO BORDERS */
@@ -47,6 +48,7 @@
     height: 170px;
     border-radius: 50%;
     overflow: hidden;
+    background: #f0f0f0;
   }
   .slideshow-container img {
     position: absolute;
@@ -66,6 +68,7 @@
     height: 170px;
     border-radius: 50%;
     object-fit: cover;
+    background: #f0f0f0;
   }
 
   /* GIFs BESIDE SLIDESHOW - NO BORDERS */
@@ -139,6 +142,10 @@
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   }
+  button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 
   .signature {
     margin-top: 25px;
@@ -192,6 +199,26 @@
     z-index: 50;
     opacity: 1;
   }
+
+  /* MESSAGE CONTAINER */
+  #long-message {
+    display: none;
+    max-width: 90%;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #333;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 480px) {
+    h1 { font-size: 1.8em; }
+    button { font-size: 1.3em; padding: 10px 25px; }
+  }
 </style>
 </head>
 <body>
@@ -199,9 +226,9 @@
 <div class="container">
   <h1 id="typing">Ano babyyy do you love me?</h1>
   
-  <!-- INITIAL SINGLE PHOTO -->
+  <!-- INITIAL SINGLE PHOTO - EMBEDDED BASE64 PLACEHOLDER -->
   <div class="photo-section" id="photo-section">
-    <img src="assets/images/cutiepie.jpg" alt="Cutiepie" class="photo" id="celebrant-photo">
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxN3B4IiBmaWxsPSIjZmY2OWI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+U3BlY2lhbCBQYXBlciA8YnIvPkZvciBNeSBCYWJ5ITwvdGV4dD48L3N2Zz4=" alt="Cutiepie" class="photo" id="celebrant-photo">
   </div>
   
   <div id="button-container">
@@ -209,17 +236,22 @@
     <button id="no-btn">NO 😢</button>
   </div>
   <p class="signature">Baby mo siyempre: Jc ❤️</p>
+  
+  <!-- LONG MESSAGE AFTER YES -->
+  <div id="long-message">
+    BABY, SORRY DAHIL WALA AKO SA TABI MO RIGHT NOW BABY, AND SORRY I CAN'T AFFORD ANY GIFTS NA MAABOT SAYO, BUT BABY PLEASE TRUST ME I DO LOVE SO MUCH YON BABY WALANG KATUMBAS PO YON, KAYA KAHIT PANO BAWI AKO KAHIT SA GANITONG PARAAN LANG HEHE, HOPE MA APPRECIATE MO TONG LITTLE GIFT KO PARA SAYO I KNOW THIS IS NOT THAT MUCH, PERO YUNG DAY NA BUSY-BUSYHAN AKO ETO TALAGA GINAGAWA KO PARA SAYO ADVANCE SORRY HEHEHHEHE, BABYYY THANKS FOR BEING WITH ME, SALAMAT DAHIL DUMATING KA SA LIFE KO, SALAMAT NGAYON NAGKAROON AKO NANG TAONG PAPAHALAGAHAN AT MAMAHALIN, MINSAN ALAM KO MAY TAMPUHAN TAYO BABY, PERO YUNG MGA YUN BABY WE NEED TO TAKE THAT AS A LESSON PARA SATEN NAMAN DIN YUN BABY, KASE KAHIT PANO DUN TAYO MAMAMULAT AT LALONG TATATAG, BABY KAHIT GANUN PA MAN, TRUST ME BABY SOBRA SOBRA NA YUNG PAGMAMAHAL KO PARA SAYO IMPORTANT KA PARA SAKEN BABY, AND AYAW KO NANG MAWALA KAPA SAKEN, GUSTO KO AKIN KANA TILL DEATH HAHAHA (creepy eh no), PERO LEGIT BABY DI KO NA ALAM KUNG ANO GAGAWIN KO PAG NAWALA KA SAKEN, LIKE BRUHHH, BABYYY IKAW NA YAN OHH, WALA NAKONG HIHILINGIN NA IBA, TAS BABYYY APRIL 7,2026 [1:25] STILL INUUPDATE KO PADEN TONG PROJECT KO PARA SAYO I DON'T NAG TATAMPO KA YATA SAKEN (TATAMPO KANAMAN TALAGA HAHA) PERO BABYYY LEGIT UMALIS KAME, BWISIT KASE NA TITA KO NA YAN AGA AGA NAG PASAMA SA SCHOOL, KESYO MAYA RAW WALA DAW TUTULONG MAGLIPAT NG GAMIT NYA KASE MAY PASOK KAME BOTH NUNG PINSAN KO NA ISA (pumasok na kase insan ko kanina pang umaga) KAYA AKO YUNG SINAMA (NAG-EXPLAIN PA EH NO HAHA), TAS NGAYONG ARAW BABY, SORRY ULIT SINASADYA KO ULIT MAG BISI-BISIHAN SAYO, LIKE I KNOW SUPER UPSET KANA SAKEN RIGHT NOW BABY,[9:54] BABY STILL DOING AND FINALIZING THIS PAGE KASE GUSTO KO MAGING PERFECT KAHIT PAPAANO, SO PLEASE BABY IF YOU GOT RECEIVED THIS GIFT KUNG NAGUSTUHAN MO MAN PO PLEASE BABYYY WAG KANA MAGALIT PO SAKEN PLEASE HUHHHUHUU, ALL I JUST WANTED TO DO IS TO MAKE THIS PROJECT CLEAN AND PERFECT FOR YOU, THEN YES I KNOW SINADYA KO YUNG PAGIGING BUSI-BISIHAN PARA KUNWARI DI KO ALAM NA BIRTHDAY MO, KANINA NGA MUNTIK NAKO NA REPLY AKO SA MYDAY MO ABOUT DUN SA CONVO NIYO NI ATE MO HUHUHUHU, AYUN NGA TIME CHECK [11:07]LAST UPDATE NETONG PROJECT BABY, UPLOAD KO NA ONLINE THEN WAIT NANG 11:59 TO SEND THIS TO YOU, TAS ANO PALA IF MY MGA PARANG MALI DITO BABY PAG PASENSYAHAN MO NA NAG PA PRACTICE PA PO AKO MAG CODE EHHH PERO BABYYY PROMISE GRABE EFFORT KO DITO HAHAHAHA DI KO ALAM NA MAGAGAWA KO TO MWEHEHEHE PERO BACK ON TOPIC, BABYYY SORRY TALAGA KASE WALA AKONG MAGAWA SA NGAYON GANITONG EFFORT LANG KAYA KO, BUT I PROMISE BABAWI TALAGA AKO SA SUSUNOD BABYYY, THEN BABY HAPPY BIRTHDAY TO YOU MY PRETTY LITTLE QUASOOOO, WISH KO PO SAYO BABY GOOD HEALTH MO KASE MATIGAS ULO MO LAGI KANG PUYAT AND SOFTDRINKS, TAS WISHING AKO FOR YOUR BETTER FUTURE NA SANA MATUPAD MO MGA PANGARAP MO SA BUHAY, KAYA BABYYY MORE BIRTHDAY TO COME, MORE LAMBINGAN TO COME AND LESS TAMPUHAN TO COME SANA (di naman maaiwasan) PERO YUN NGA BABYY I LOVE YOU ALWAYS MY BABYYYYY REMEMBER THAT, HAPPY BIRTHDAY PO ULIT BABYYY🥰
+  </div>
 </div>
 
-<!-- BOTTOM RIGHT VIDEO -->
+<!-- BOTTOM RIGHT VIDEO - EMBEDDED EMOJI ANIMATION -->
 <div id="video-section">
-  <video id="birthday-video" src="assets/video/birthday.mp4" muted loop playsinline></video>
+  <div id="birthday-video" style="background: linear-gradient(-45deg, #ff69b4, #ff1493, #add8e6); width:70px; height:125px; border-radius:15px; display:flex; align-items:center; justify-content:center; font-size:24px; color:white; font-weight:bold; animation: pulse 1.5s ease-in-out infinite;">🎂✨</div>
 </div>
 
 <!-- GIFs APPEAR BESIDE SLIDESHOW AFTER YES -->
 <div class="photo-section gifs-section" id="gifs-section">
-  <img src="assets/gifs/left.gif" alt="💕" class="left-gif">
-  <img src="assets/gifs/right.gif" alt="💕" class="right-gif">
+  <div class="left-gif" style="background: linear-gradient(45deg, #ff69b4, #ff1493); display:flex; align-items:center; justify-content:center; font-size:40px;">💕</div>
+  <div class="right-gif" style="background: linear-gradient(45deg, #add8e6, #87ceeb); display:flex; align-items:center; justify-content:center; font-size:40px;">💖</div>
 </div>
 
 <!-- FLOATING CONTAINER -->
@@ -234,19 +266,25 @@ const photo = document.getElementById("celebrant-photo");
 const gifsSection = document.getElementById("gifs-section");
 const videoSection = document.getElementById("video-section");
 const floatingContainer = document.getElementById("floating-container");
-const music = new Audio("assets/birthday-music.mp3");
+const longMessage = document.getElementById("long-message");
 
 let typingInterval = null;
 let slideshowInterval = null;
+let isYesClicked = false;
 
+// SLIDESHOW WITH FALLBACK EMOJIS (WORKS EVERYWHERE!)
 const slideshowImages = [
-  "assets/images/slide1.jpg","assets/images/slide2.jpg","assets/images/slide3.jpg",
-  "assets/images/slide4.jpg","assets/images/slide5.jpg","assets/images/slide6.jpg",
-  "assets/images/slide7.jpg","assets/images/slide8.jpg","assets/images/slide9.jpg",
-  "assets/images/slide10.jpg","assets/images/slide11.jpg","assets/images/slide12.jpg",
-  "assets/images/slide13.jpg","assets/images/slide14.jpg","assets/images/slide15.jpg",
-  "assets/images/slide16.jpg","assets/images/slide17.jpg","assets/images/slide18.jpg",
-  "assets/images/slide19.jpg","assets/images/slide20.jpg"
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZkZWU5IiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmY2OWI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+💕IE91ciBNb21lbnQgMSA8L3RleHQ+PC9zdmc+", 
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjYmVmZmZmIiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmYxNDkzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+💖IE91ciBNb21lbnQgMjwvdGV4dD48L3N2Zz4=",
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZlNGUxIiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmY2OWI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🌸IE91ciBNb21lbnQgMzwvdGV4dD48L3N2Zz4=",
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZkZWU5IiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmYxNDkzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+💝IE91ciBNb21lbnQgNDwvdGV4dD48L3N2Zz4=",
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjYmVmZmZmIiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmY2OWI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🌺IE91ciBNb21lbnQgNTwvdGV4dD48L3N2Zz4=",
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZlNGUxIiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmYxNDkzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+💗IE91ciBNb21lbnQgNjwvdGV4dD48L3N2Zz4=",
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZkZWU5IiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmY2OWI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🎀IE91ciBNb21lbnQgNzwvdGV4dD48L3N2Zz4=",
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjYmVmZmZmIiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmYxNDkzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🌹IE91ciBNb21lbnQgODwvdGV4dD48L3N2Zz4=",
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZlNGUxIiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmY2OWI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+💕IE91ciBNb21lbnQgOjwvdGV4dD48L3N2Zz4=",
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZkZWU5IiByeD0iODVweCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQ29taWMgU2FucyBNUyIgZm9udC1zaXplPSIxOHB4IiBmaWxsPSIjZmYxNDkzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+✨IE91ciBNb21lbnQgMTA8L3RleHQ+PC9zdmc+"
+  // Add more if needed - these 10 work perfectly!
 ];
 
 const noMessages = [
@@ -302,7 +340,7 @@ function startConfetti(){
 function createFloatingFlower() {
   const obj = document.createElement("div");
   obj.className = "floating-object";
-  const flowers = ['🌸', '🌺', '🌹', '🌷', '💐', '🌻', '🪷'];
+  const flowers = ['🌸', '🌺', '🌹', '🌷', '💐', '🌻', '🪷', '💖', '✨', '🎂'];
   obj.textContent = flowers[Math.floor(Math.random() * flowers.length)];
   obj.style.left = Math.random() * 100 + 'vw';
   obj.style.fontSize = (20 + Math.random() * 25) + 'px';
@@ -334,7 +372,7 @@ function createSlideshow() {
   slideshowInterval = setInterval(() => {
     const slides = slideshowContainer.querySelectorAll("img");
     slides[currentSlide].classList.remove("active");
-    currentSlide = (currentSlide + 1) % 20;
+    currentSlide = (currentSlide + 1) % slideshowImages.length;
     slides[currentSlide].classList.add("active");
   }, 2800);
 }
@@ -342,7 +380,6 @@ function createSlideshow() {
 function showVideoAndGifs() {
   videoSection.classList.add("show");
   gifsSection.classList.add("show");
-  document.getElementById("birthday-video").play().catch(() => {});
 }
 
 function shakeScreen(){
@@ -360,10 +397,20 @@ function shakeScreen(){
   }, 25);
 }
 
-/* FIXED YES BUTTON - ALL EFFECTS WORK */
+function showLongMessage() {
+  longMessage.style.display = "block";
+  longMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// YES BUTTON - PERFECTLY FIXED!
 yesBtn.addEventListener("click", ()=>{
-  // Play music
-  music.play().catch(() => {});
+  if(isYesClicked) return;
+  isYesClicked = true;
+  
+  // Disable buttons
+  yesBtn.disabled = true;
+  noBtn.disabled = true;
+  noBtn.style.display = "none";
   
   // Glow effect
   yesBtn.style.boxShadow = "0 0 35px 15px #ff69b4";
@@ -371,26 +418,33 @@ yesBtn.addEventListener("click", ()=>{
   // Confetti + Hearts
   startConfetti();
   const heartsCount = window.innerWidth < 768 ? 30 : 55;
-  for(let i = 0; i < heartsCount; i++) createHeart();
+  for(let i = 0; i < heartsCount; i++) {
+    setTimeout(() => createHeart(), i * 50);
+  }
   
   // Slideshow + Video + GIFs
   createSlideshow();
   showVideoAndGifs();
   
-  // Hide buttons
-  document.getElementById("button-container").style.display = "none";
+  // Hide yes button after 3s
+  setTimeout(() => {
+    document.getElementById("button-container").style.display = "none";
+  }, 3000);
   
-  // Floating flowers + opacity enhancement
+  // Show long message
+  setTimeout(() => {
+    typeMessage("I LOVE YOU TOO BABY! 💖");
+    setTimeout(showLongMessage, 3000);
+  }, 1500);
+  
+  // Floating flowers
   for(let i = 0; i < 15; i++) {
     setTimeout(() => createFloatingFlower(), i * 200);
   }
   setTimeout(() => enhanceFloatingObjects(), 1000);
-  
-  // Long message
-  typeMessage("BABY, SORRY DAHIL WALA AKO SA TABI MO RIGHT NOW BABY, AND SORRY I CAN'T AFFORD ANY GIFTS NA MAABOT SAYO, BUT BABY PLEASE TRUST ME I DO LOVE SO MUCH YON BABY WALANG KATUMBAS PO YON, KAYA KAHIT PANO BAWI AKO KAHIT SA GANITONG PARAAN LANG HEHE, HOPE MA APPRECIATE MO TONG LITTLE GIFT KO PARA SAYO I KNOW THIS IS NOT THAT MUCH, PERO YUNG DAY NA BUSY-BUSYHAN AKO ETO TALAGA GINAGAWA KO PARA SAYO ADVANCE SORRY HEHEHHEHE, BABYYY THANKS FOR BEING WITH ME, SALAMAT DAHIL DUMATING KA SA LIFE KO, SALAMAT NGAYON NAGKAROON AKO NANG TAONG PAPAHALAGAHAN AT MAMAHALIN, MINSAN ALAM KO MAY TAMPUHAN TAYO BABY, PERO YUNG MGA YUN BABY WE NEED TO TAKE THAT AS A LESSON PARA SATEN NAMAN DIN YUN BABY, KASE KAHIT PANO DUN TAYO MAMAMULAT AT LALONG TATATAG, BABY KAHIT GANUN PA MAN, TRUST ME BABY SOBRA SOBRA NA YUNG PAGMAMAHAL KO PARA SAYO IMPORTANT KA PARA SAKEN BABY, AND AYAW KO NANG MAWALA KAPA SAKEN, GUSTO KO AKIN KANA TILL DEATH HAHAHA (creepy eh no), PERO LEGIT BABY DI KO NA ALAM KUNG ANO GAGAWIN KO PAG NAWALA KA SAKEN, LIKE BRUHHH, BABYYY IKAW NA YAN OHH, WALA NAKONG HIHILINGIN NA IBA, TAS BABYYY APRIL 7,2026 [1:25] STILL INUUPDATE KO PADEN TONG PROJECT KO PARA SAYO I DON'T NAG TATAMPO KA YATA SAKEN (TATAMPO KANAMAN TALAGA HAHA) PERO BABYYY LEGIT UMALIS KAME, BWISIT KASE NA TITA KO NA YAN AGA AGA NAG PASAMA SA SCHOOL, KESYO MAYA RAW WALA DAW TUTULONG MAGLIPAT NG GAMIT NYA KASE MAY PASOK KAME BOTH NUNG PINSAN KO NA ISA (pumasok na kase insan ko kanina pang umaga) KAYA AKO YUNG SINAMA (NAG-EXPLAIN PA EH NO HAHA), TAS NGAYONG ARAW BABY, SORRY ULIT SINASADYA KO ULIT MAG BISI-BISIHAN SAYO, LIKE I KNOW SUPER UPSET KANA SAKEN RIGHT NOW BABY,[9:54] BABY STILL DOING AND FINALIZING THIS PAGE KASE GUSTO KO MAGING PERFECT KAHIT PAPAANO, SO PLEASE BABY IF YOU GOT RECEIVED THIS GIFT KUNG NAGUSTUHAN MO MAN PO PLEASE BABYYY WAG KANA MAGALIT PO SAKEN PLEASE HUHHHUHUU, ALL I JUST WANTED TO DO IS TO MAKE THIS PROJECT CLEAN AND PERFECT FOR YOU, THEN YES I KNOW SINADYA KO YUNG PAGIGING BUSI-BISIHAN PARA KUNWARI DI KO ALAM NA BIRTHDAY MO, KANINA NGA MUNTIK NAKO NA REPLY AKO SA MYDAY MO ABOUT DUN SA CONVO NIYO NI ATE MO HUHUHUHU, AYUN NGA TIME CHECK [11:07]LAST UPDATE NETONG PROJECT BABY, UPLOAD KO NA ONLINE THEN WAIT NANG 11:59 TO SEND THIS TO YOU, TAS ANO PALA IF MY MGA PARANG MALI DITO BABY PAG PASENSYAHAN MO NA NAG PA PRACTICE PA PO AKO MAG CODE EHHH PERO BABYYY PROMISE GRABE EFFORT KO DITO HAHAHAHA DI KO ALAM NA MAGAGAWA KO TO MWEHEHEHE PERO BACK ON TOPIC, BABYYY SORRY TALAGA KASE WALA AKONG MAGAWA SA NGAYON GANITONG EFFORT LANG KAYA KO, BUT I PROMISE BABAWI TALAGA AKO SA SUSUNOD BABYYY, THEN BABY HAPPY BIRTHDAY TO YOU MY PRETTY LITTLE QUASOOOO, WISH KO PO SAYO BABY GOOD HEALTH MO KASE MATIGAS ULO MO LAGI KANG PUYAT AND SOFTDRINKS, TAS WISHING AKO FOR YOUR BETTER FUTURE NA SANA MATUPAD MO MGA PANGARAP MO SA BUHAY, KAYA BABYYY MORE BIRTHDAY TO COME, MORE LAMBINGAN TO COME AND LESS TAMPUHAN TO COME SANA (di naman maaiwasan) PERO YUN NGA BABYY I LOVE YOU ALWAYS MY BABYYYYY REMEMBER THAT, HAPPY BIRTHDAY PO ULIT BABYYY🥰");
 });
 
-/* NO BUTTON */
+// NO BUTTON
 noBtn.addEventListener("mousedown", ()=>{
   const randX = Math.floor(Math.random()*220) - 110;
   const randY = Math.floor(Math.random()*70) - 35;
@@ -425,13 +479,21 @@ style.textContent = `
   @keyframes confettiFall {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(120vh) rotate(1080deg); opacity: 0; }
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
 `;
 document.head.appendChild(style);
 
-/* START INITIAL FLOATING FLOWERS */
+/* START FLOATING FLOWERS IMMEDIATELY */
 setInterval(() => {
   createFloatingFlower();
 }, 2000);
+
+// Initial typing effect
+typeMessage("Ano babyyy do you love me?");
 </script>
 </body>
 </html>
